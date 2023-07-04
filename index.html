@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input
+          type="text"
+          placeholder="Search for a city..."
+          spellcheck="false"
+          onkeypress="handleKeyPress(event)"
+        />
+      </div>
+      <div class="error">
+        <p></p>
+      </div>
+      <div class="weather">
+        <img
+          src="https://developer.foreca.com/static/images/symbols/d000.png"
+          alt="weather-icon"
+          class="weather-icon"
+        />
+        <h3 class="weather-description"></h3>
+        <h1 class="temp"></h1>
+        <h2 class="city"></h2>
+        <div class="details">
+          <div class="col">
+            <img src="images/Humidity.png" alt="" />
+            <div>
+              <p class="humidity"></p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="images/Wind.png" alt="" />
+            <div>
+              <p class="wind"></p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
